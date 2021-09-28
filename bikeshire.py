@@ -212,7 +212,7 @@ def users(df):
     user_type_counts = df.groupby('User Type')['User Type'].count()
     return user_type_counts
 
-
+##asking the gender of the loaner
 def gender(df):
     '''Given a dataframe of bikeshare data, this function returns the number of
         trips by gender
@@ -272,7 +272,7 @@ def display_data(df, current_line):
     if display == 'no' or display == 'n':
         return
 
-
+##main code
 def main():
     '''Calculates and prints out the descriptive statistics about a city and time period
     specified by the user via raw input.
