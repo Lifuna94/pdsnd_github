@@ -8,7 +8,7 @@ chicago = 'chicago.csv'
 new_york_city = 'new_york_city.csv'
 washington = 'washington.csv'
 
-
+##function to get a city
 def get_city():
     '''Asks the user for a city and returns the filename for that city's bike share data.
     Args:
@@ -28,7 +28,7 @@ def get_city():
         print("\nI'm sorry, I'm not sure which city you're referring to. Let's try again.")
         return get_city()
 
-
+##Time period to load the bike
 def get_time_period():
     '''Asks the user for a time period and returns the specified filter.
     Args:
@@ -50,7 +50,7 @@ def get_time_period():
         print("\nI'm sorry, I'm not sure which time period you're trying to filter by. Let's try again.")
         return get_time_period()
 
-
+##month at the moment
 def get_month():
     '''Asks the user for a month and returns the specified month.
     Args:
@@ -126,7 +126,7 @@ def popular_day(df):
     #Sort the results highest to lowest and then return the name of the day of the week that was highest (first in sorted list)
     return "Most popular day of the week for start time: " + calendar.day_name[int(trips_by_day_of_week.sort_values(ascending=False).index[0])]
 
-
+##getting times that are most popular 
 def popular_hour(df):
     '''Given a dataframe of bikeshare data, this function returns the hour of the day with the most trips.
     Args:
@@ -257,7 +257,7 @@ def display_data(df, current_line):
     Args:
         df: dataframe of bikeshare data
     Returns:
-        If the user says yes then this function returns the next five lines 
+        If the user says yes then this function returns the next five lines
             of the dataframe and then asks the question again by calling this
             function again (recursive)
         If the user says no then this function returns, but without any value
