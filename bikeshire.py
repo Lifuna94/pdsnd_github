@@ -272,7 +272,7 @@ def display_data(df, current_line):
     if display == 'no' or display == 'n':
         return
 
-
+##main code
 def main():
     '''Calculates and prints out the descriptive statistics about a city and time period
     specified by the user via raw input.
