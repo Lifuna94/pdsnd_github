@@ -4,7 +4,7 @@
 August 2021
 
 ### Project Title
-Bikeshire
+Bikeshire.py 
 
 
 ### Description
@@ -22,4 +22,5 @@ helper code
 
 Pandas official documentations
 W3schools and StackOverflow
-Udacity's python lessons and the helper code.
+Udacity's python lessons and the helper code
+git documentation
